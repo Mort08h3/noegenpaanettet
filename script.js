@@ -89,6 +89,7 @@ function startIntro() {
     document.querySelector("#jaknap_sprite").addEventListener("click", questOne);
     //---------klik forkert--->youLose
     document.querySelector("#nejknap_sprite").addEventListener("click", youLose);
+
 }
 
 
@@ -99,6 +100,7 @@ function startIntro() {
 
 function questOne() {
     console.log("questOne")
+
     //---------remove forrige listeners-------//
     document.querySelector("#jaknap_sprite").removeEventListener("click", questOne);
 

@@ -204,8 +204,8 @@ body {
 #tekst_1 {
     background-size: cover;
     width: 46vw;
-    padding: 3vw 4vw 4vw 5vw;
-    margin: 4vw 10vw 4vw 0vw auto;
+    padding: 0vw 4vw 4vw 5vw;
+    margin: 4vw 10vw 4vw 0vw;
     font-size: 3vw;
 
 }
@@ -287,8 +287,8 @@ body {
 #tekst_2 {
     background-size: cover;
     width: 46vw;
-    padding: 3vw 4vw 4vw 5vw;
-    margin: 4vw 10vw 4vw 0vw auto;
+    padding: 0vw 4vw 4vw 5vw;
+    margin: 4vw 10vw 4vw 0vw;
     font-size: 3vw;
 }
 
@@ -369,8 +369,8 @@ body {
 #tekst_3 {
     background-size: cover;
     width: 46vw;
-    padding: 3vw 4vw 4vw 5vw;
-    margin: 4vw 10vw 4vw 0vw auto;
+    padding: 0vw 4vw 4vw 5vw;
+    margin: 4vw 10vw 4vw 0vw;
     font-size: 3vw;
 }
 
@@ -453,8 +453,8 @@ body {
 #tekst_4 {
     background-size: cover;
     width: 46vw;
-    padding: 1vw 4vw 4vw 5vw;
-    margin: 4vw 10vw 4vw 0vw auto;
+    padding: 0vw 4vw 4vw 5vw;
+    margin: 4vw 10vw 4vw 0vw;
     font-size: 3vw;
 }
 
@@ -536,8 +536,8 @@ body {
 #tekst_5 {
     background-size: cover;
     width: 46vw;
-    padding: 3vw 4vw 4vw 5vw;
-    margin: 4vw 10vw 4vw 0vw auto;
+    padding: 0vw 4vw 4vw 5vw;
+    margin: 4vw 10vw 4vw 0vw;
     font-size: 3vw;
 }
 
@@ -618,8 +618,8 @@ body {
 #tekst_6 {
     background-size: cover;
     width: 46vw;
-    padding: 3vw 4vw 4vw 5vw;
-    margin: 4vw 10vw 4vw 0vw auto;
+    padding: 0vw 4vw 4vw 5vw;
+    margin: 4vw 10vw 4vw 0vw;
     font-size: 3vw;
 }
 
@@ -793,5 +793,23 @@ body {
 
     100% {
         transform: rotate(0deg)
+    }
+}
+
+.dissappear {
+    animation-name: dissappear_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.59, -0.56, .77, 1.34);
+    animation-fill-mode: forwards;
+}
+
+@keyframes dissappear_kf {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
     }
 }
